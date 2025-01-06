@@ -4,6 +4,7 @@ import {Route , Routes} from "react-router"
 import Nav from './components/Nav';
 import Header from './components/Header';
 import Main from './components/Main';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Header></Header>
             <Nav></Nav>
             <Main></Main>
+            <Contact></Contact>
 
 
           </>
