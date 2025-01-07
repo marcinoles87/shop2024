@@ -3,3 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+.header-container{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 10vw;
+  margin-left: 2rem;
+}
+
+.header-logo img{
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  margin: 2rem;
+}

@@ -5,6 +5,7 @@ function Nav() {
     <div className='nav-container'>
       <div className='nav-elements'>
         <ul className='nav-elements-container'>
+          
           <li className='nav-element'>Home</li>
           <li className='nav-element'>About Us</li>
           <li className='nav-element'>Products</li>
