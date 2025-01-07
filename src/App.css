@@ -19,3 +19,20 @@
   object-fit: contain;
   margin: 2rem;
 }
+
+
+.nav-container{
+  display: flex;
+  justify-content: center;
+}
+
+.nav-elements-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-element{
+  font-size: 1.2rem;
+  list-style: none;
+  margin: 30px;
+}
