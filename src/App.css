@@ -37,20 +37,30 @@
   margin: 30px;
 }
 
+.main-container{
+  width: 100vw;
+}
+
 
 .main-elements{
   width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 .main-element{
+  width: 30vw;
   display: flex;
   align-items: center;
 }
 
 .main-element img{
+  width: 100%;
+}
+
+.main-element{
   border: 2px solid black;
   border-radius: 10px;
 }
