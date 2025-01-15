@@ -17,13 +17,15 @@ function App() {
   const baseUrl = 'https://collectionapi.metmuseum.org/public/collection/v1/objects/10'
 
   useEffect( () => {
-    axios.get(`${baseUrl}`).then( (response) =>
-      setData(response.data)
-    
-    )
- 
-      
-  } , [])
+    fetch('https://api.fbi.gov/wanted/list')
+    .then(response => response.json())
+    .then(data => {
+      console.log(data.items)
+      setData(data.items)
+    })
+
+  } , [] )
+
   return (
     <div className="App">
 

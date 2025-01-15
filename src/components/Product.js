@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react'
 
 
 
-function Product(data) {
+function Product({data}) {
 
+ 
+console.log(data)
 
-  console.log(data)
   
 
   return (
@@ -16,17 +17,22 @@ function Product(data) {
     <div className='product-container'>
       <h1>Products</h1>
 
-      {data ? 
-
-      data.map( (item,index) => {
+      {data.map( (item , index) => {
         return(
-          <div className='product'>
-            <p>{item.artistDisplayName}</p>
-          </div>
+          <>
+          <h3>{item.caution}</h3>
+          </>
         )
-      })
+      })}
 
- : ""}
+     
+          <div className='product'>
+           
+          </div>
+        
+    
+
+ 
         
     </div>
   )
