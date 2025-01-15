@@ -36,6 +36,13 @@ function App() {
             <Nav></Nav>
             <Main></Main>
             <Product data={data}></Product>
+
+            {data.map( (item , index) => {
+              <div className='product'>
+                <h3>{item.title}</h3>
+                <p>{item.caution}</p>
+              </div>
+            })}
             <Contact></Contact>
 
 
