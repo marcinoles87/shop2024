@@ -18,9 +18,9 @@ function App() {
   const baseUrl = 'https://collectionapi.metmuseum.org/public/collection/v1/objects/10'
 
   useEffect( () => {
-    axios('https://randomuser.me/api')
+    axios('https://randomuser.me/api/?results=15')
     .then(response => 
-      setData(response.data.results[0])
+      setData(response.data.results)
     )
     
       
@@ -40,7 +40,15 @@ function App() {
             <Main></Main>
             <Product data={data}></Product>
 
-              <p>{data.cell}</p>
+              {data.map ( (item,index) => {
+                return(
+                  <>
+                  <p>{item.cell}</p>
+                  <p>{item.gender}</p>
+                  <p>{item.email}</p>
+                  </>
+                )
+              })}
               {/* <img src={data.picture.thumbnail} alt={data.cell}></img> */}
             
            

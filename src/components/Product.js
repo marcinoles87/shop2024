@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 
 
-function Product(data) {
+function Product({data}) {
 
   
 
@@ -13,6 +13,16 @@ function Product(data) {
 
     <div className='product-container'>
       <h1>Products</h1>
+
+      {data.map ( (item,index) => {
+                return(
+                  <>
+                  <p>{item.cell}</p>
+                  <p>{item.gender}</p>
+                  <p>{item.email}</p>
+                  </>
+                )
+              })}
 
       
 
