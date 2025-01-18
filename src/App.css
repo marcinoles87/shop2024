@@ -64,3 +64,21 @@
   border: 2px solid black;
   border-radius: 10px;
 }
+
+.product-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-one{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+
+}
