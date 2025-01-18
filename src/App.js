@@ -13,9 +13,6 @@ import Product from './components/Product';
 function App() {
 
   const [data , setData] = useState([]);
-  const [dataRecive , setDataRecive] = useState(false)
-
-  const baseUrl = 'https://collectionapi.metmuseum.org/public/collection/v1/objects/10'
 
   useEffect( () => {
     axios('https://randomuser.me/api/?results=10')
@@ -39,13 +36,6 @@ function App() {
             <Nav></Nav>
             <Main></Main>
             <Product data={data}></Product>
-
-             
-              {/* <img src={data.picture.thumbnail} alt={data.cell}></img> */}
-            
-           
-
-           
             <Contact></Contact>
 
 
