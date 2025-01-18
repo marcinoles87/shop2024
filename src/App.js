@@ -12,20 +12,23 @@ import Product from './components/Product';
 
 function App() {
 
-  const [data , setData] = useState();
+  const [data , setData] = useState([]);
+  const [dataRecive , setDataRecive] = useState(false)
 
   const baseUrl = 'https://collectionapi.metmuseum.org/public/collection/v1/objects/10'
 
   useEffect( () => {
-    fetch('https://api.fbi.gov/wanted/list')
-    .then(response => response.json())
-    .then(data => {
-      console.log(data.items)
-      setData(data.items)
-    })
-
+    axios('https://randomuser.me/api')
+    .then(response => 
+      setData(response.data.results[0])
+    )
+    
+      
   } , [] )
 
+  console.log(data)
+
+ 
   return (
     <div className="App">
 
@@ -37,12 +40,12 @@ function App() {
             <Main></Main>
             <Product data={data}></Product>
 
-            {data.map( (item , index) => {
-              <div className='product'>
-                <h3>{item.title}</h3>
-                <p>{item.caution}</p>
-              </div>
-            })}
+              <p>{data.cell}</p>
+              {/* <img src={data.picture.thumbnail} alt={data.cell}></img> */}
+            
+           
+
+           
             <Contact></Contact>
 
 
