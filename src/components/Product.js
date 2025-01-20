@@ -7,7 +7,7 @@ function Product({data}) {
   const r = Math.random()*300
   const g = Math.random()*300
   const b = Math.random()*300
-  const color = <div style={{width:'300px', height:'300px',backgroundColor:`rgb(${r},${g},${b})`}} ></div>
+  const color = <div style={{width:'300px', height:'300px', margin:'10px',backgroundColor:`rgb(${r},${g},${b})`}} ></div>
 
 
 

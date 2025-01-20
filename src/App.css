@@ -100,3 +100,17 @@
 .product-one img{
   width: 80%;
 }
+
+.contact-container{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(18, 30, 18);
+  color:white;
+  padding: 20px;
+  justify-content: center;
+ 
+}
+
+.contact-info{
+  width: 50%;
+}
