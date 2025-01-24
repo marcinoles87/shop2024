@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 
 
-function Product({data}) {
+function Product({data , koszyk , setKoszyk}) {
 
   const r = Math.random()*300
   const g = Math.random()*300
@@ -40,6 +40,13 @@ const products = [
     img : color
   }
 ]
+
+
+const handleChange = ( () => {
+  setKoszyk(koszyk+1)
+  console.log(koszyk)
+
+})
   
 
 
@@ -56,7 +63,7 @@ const products = [
                       <h4><b>Product Name</b></h4>
                       <p>Price : 99.99$</p>
                       <p>{item.email}</p>
-                      <button>Add to card</button>
+                      <button onClick={handleChange}>Add to card</button>
                     </div>
                   
                   
@@ -64,13 +71,13 @@ const products = [
                 )
               })}
 
-              {products.map ( (item,index) => {
+              {/* {products.map ( (item,index) => {
                 return(
                   <>
                   {item.img}
                   </>
                 )
-              })}
+              })} */}
 
       
 

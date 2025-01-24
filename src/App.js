@@ -13,7 +13,10 @@ import Sidebar from './components/Sidebar';
 
 function App() {
 
+  const initial = 0
+
   const [data , setData] = useState([]);
+  const [koszyk , setKoszyk] = useState(initial)
 
   useEffect( () => {
     axios('https://randomuser.me/api/?results=10')
@@ -34,12 +37,12 @@ function App() {
         <Route path='*' element={
           <>
             <Header></Header>
-            <Nav></Nav>
+            <Nav koszyk={koszyk}></Nav>
             <Main></Main>
             
             <div className='products'>
               <Sidebar></Sidebar>
-            <Product data={data}></Product>
+            <Product data={data} koszyk={koszyk} setKoszyk={setKoszyk}></Product>
             </div>
             
             <Contact></Contact>
