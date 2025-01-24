@@ -56,6 +56,7 @@ const products = [
                       <h4><b>Product Name</b></h4>
                       <p>Price : 99.99$</p>
                       <p>{item.email}</p>
+                      <button>Add to card</button>
                     </div>
                   
                   
