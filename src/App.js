@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Contact from './components/Contact';
 import Product from './components/Product';
+import Sidebar from './components/Sidebar';
 
 
 function App() {
@@ -35,7 +36,12 @@ function App() {
             <Header></Header>
             <Nav></Nav>
             <Main></Main>
+            
+            <div className='products'>
+              <Sidebar></Sidebar>
             <Product data={data}></Product>
+            </div>
+            
             <Contact></Contact>
 
 
