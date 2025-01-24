@@ -1,8 +1,8 @@
 import React from 'react'
 
-import img1 from '../img/logo.png'
-import img2 from '../img/logo.png'
-import img3 from '../img/logo.png'
+import img1 from '../img/1.jpg'
+import img2 from '../img/2.jpg'
+import img3 from '../img/3.jpg'
 
 function Main() {
 
@@ -36,7 +36,7 @@ function Main() {
           return(
             <div className='main-element'>
               <img src={item.img} alt={item.name}></img>
-              <p>{item.name}</p>
+              
               
             </div>
           )

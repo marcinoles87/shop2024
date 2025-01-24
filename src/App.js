@@ -39,7 +39,7 @@ function App() {
             <Header></Header>
             <Nav></Nav>
             <Main></Main>
-            <p className='shopItem'>Koszyk:{koszyk}</p>
+            <p className='shopItem'>Koszyk : {koszyk}</p>
             
             <div className='products'>
               <Sidebar></Sidebar>
