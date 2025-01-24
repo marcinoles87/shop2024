@@ -37,8 +37,9 @@ function App() {
         <Route path='*' element={
           <>
             <Header></Header>
-            <Nav koszyk={koszyk}></Nav>
+            <Nav></Nav>
             <Main></Main>
+            <p className='shopItem'>Koszyk:{koszyk}</p>
             
             <div className='products'>
               <Sidebar></Sidebar>

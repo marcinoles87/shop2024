@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Nav({koszyk}) {
+function Nav() {
   return (
     <div className='nav-container'>
       <div className='nav-elements'>
@@ -10,7 +10,7 @@ function Nav({koszyk}) {
           <li className='nav-element'>About Us</li>
           <li className='nav-element'>Products</li>
           <li className='nav-element'>Contact</li>
-          <li className='nav-element'>Koszyk : {koszyk}</li>
+          
           
           
         </ul>
