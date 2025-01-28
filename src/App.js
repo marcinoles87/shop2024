@@ -2,13 +2,14 @@ import './App.css';
 import axios from 'axios'
 import { useEffect , useState} from 'react';
 
-import {Route , Routes} from "react-router"
+import {Link, Route , Routes} from "react-router"
 import Nav from './components/Nav';
 import Header from './components/Header';
 import Main from './components/Main';
 import Contact from './components/Contact';
 import Product from './components/Product';
 import Sidebar from './components/Sidebar';
+import Koszyk from './pages/Koszyk';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
   const initial = 0
 
   const [data , setData] = useState([]);
-  const [koszyk , setKoszyk] = useState(initial)
+  const [koszyk , setKoszyk] = useState([])
 
   useEffect( () => {
     axios('https://randomuser.me/api/?results=10')
@@ -39,7 +40,7 @@ function App() {
             <Header></Header>
             <Nav></Nav>
             <Main></Main>
-            <p className='shopItem'>Koszyk : {koszyk}</p>
+            <Link to={'/koszyk'} className='shopItem'>Koszyk : {koszyk.length}</Link>
             
             <div className='products'>
               <Sidebar></Sidebar>
@@ -51,8 +52,11 @@ function App() {
 
           </>
         }
+        
 
         />
+
+        <Route path='/koszyk' element={<Koszyk></Koszyk>}></Route>
 
       </Routes>
       
