@@ -44,18 +44,13 @@ const products = [
 
 const handleClick = ( (item) => {
 
-  console.log(item)
-  // setKoszyk(
-  //   {
-  //     name:item.name,
-  //     price:item.price,
-  //     qty:item.index,
-      
-  //   }
-  // )
+ console.log(koszyk)
+ setKoszyk([...koszyk,item])
   
 
 })
+
+// console.log(koszyk)
   
 
 
