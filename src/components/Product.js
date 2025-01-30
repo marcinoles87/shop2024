@@ -42,15 +42,17 @@ const products = [
 ]
 
 
-const handleChange = ( (item) => {
-  setKoszyk(
-    {
-      name:item.name,
-      price:item.price,
-      qty:item.index,
+const handleClick = ( (item) => {
+
+  console.log(item)
+  // setKoszyk(
+  //   {
+  //     name:item.name,
+  //     price:item.price,
+  //     qty:item.index,
       
-    }
-  )
+  //   }
+  // )
   
 
 })
@@ -70,7 +72,7 @@ const handleChange = ( (item) => {
                       <h4><b>Product Name</b></h4>
                       <p>Price : 99.99$</p>
                       <p>{item.email}</p>
-                      <button onClick={handleChange(item)}>Add to card</button>
+                      <button onClick={( () => handleClick(item))}>Add to card</button>
                     </div>
                   
                   
