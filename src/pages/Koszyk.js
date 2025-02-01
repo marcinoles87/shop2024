@@ -11,7 +11,7 @@ function Koszyk({koszyk}) {
             <div className='koszyk-produkty' key={index}>
             <p>{item.index}</p>
             <p>{item.email}</p>
-            <p>{item.picture.thumbnail}</p>
+            <img src={item.picture.thumbnail} alt={item.index}></img>
             </div>
           )
         })}
