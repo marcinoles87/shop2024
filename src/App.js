@@ -56,7 +56,7 @@ function App() {
 
         />
 
-        <Route path='/koszyk' element={<Koszyk></Koszyk>}></Route>
+        <Route path='/koszyk' element={<Koszyk koszyk={koszyk}></Koszyk>}></Route>
 
       </Routes>
       

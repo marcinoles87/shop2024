@@ -11,7 +11,7 @@ function Product({data , koszyk , setKoszyk}) {
 
 
 
-console.log(color)
+
   
 
   
