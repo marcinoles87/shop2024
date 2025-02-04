@@ -4,10 +4,13 @@ import '../App.css'
 function Koszyk({koszyk , price}) {
 
   const zamowienieNr = Math.floor(Math.random()*100)
+  const dzienZamowienia = Date()
   return (
     <div className='koszyk-container'>
       <div className='koszyk-items'>
-        <h2>Twoje zamowienie to : {zamowienieNr}</h2>
+        <h2>Twoje zamowienie to : {zamowienieNr} z dnia 
+          </h2>
+          <p>{dzienZamowienia.toString()}</p>
         <h3>Lista produktow :</h3>
         {koszyk.map( (item,index) => {
           return(
