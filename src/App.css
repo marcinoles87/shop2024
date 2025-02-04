@@ -183,3 +183,17 @@
   text-decoration: underline;
 
 }
+
+
+/* koszyk */
+
+.koszyk-container{
+  display: flex;
+}
+
+.koszyk-items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

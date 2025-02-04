@@ -1,10 +1,13 @@
 import React from 'react'
+import '../App.css'
 
-function Koszyk({koszyk}) {
+function Koszyk({koszyk , price}) {
+
+  const zamowienieNr = Math.floor(Math.random()*100)
   return (
     <div className='koszyk-container'>
-      <div>
-        <h2>Twoje zamowienie to :</h2>
+      <div className='koszyk-items'>
+        <h2>Twoje zamowienie to : {zamowienieNr}</h2>
         <h3>Lista produktow :</h3>
         {koszyk.map( (item,index) => {
           return(
@@ -15,6 +18,8 @@ function Koszyk({koszyk}) {
             </div>
           )
         })}
+
+        <h3>Podsumowanie : {price}</h3>
       </div>
     </div>
   )

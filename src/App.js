@@ -18,6 +18,7 @@ function App() {
 
   const [data , setData] = useState([]);
   const [koszyk , setKoszyk] = useState([])
+  const [price , setPrice] = useState(0)
 
   useEffect( () => {
     axios('https://randomuser.me/api/?results=10')
@@ -56,7 +57,7 @@ function App() {
 
         />
 
-        <Route path='/koszyk' element={<Koszyk koszyk={koszyk}></Koszyk>}></Route>
+        <Route path='/koszyk' element={<Koszyk koszyk={koszyk} price={price}></Koszyk>}></Route>
 
       </Routes>
       
