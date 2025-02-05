@@ -44,8 +44,12 @@ const products = [
 
 const handleClick = ( (item) => {
 
- console.log(koszyk)
+
  setKoszyk([...koszyk,item])
+
+ const changeColorKoszyk = document.querySelector('.shopItem')
+ console.log(changeColorKoszyk)
+ changeColorKoszyk.classList.add('productBuy')
   
 
 })

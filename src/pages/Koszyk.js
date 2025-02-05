@@ -8,8 +8,7 @@ function Koszyk({koszyk , price}) {
   return (
     <div className='koszyk-container'>
       <div className='koszyk-items'>
-        <h2>Twoje zamowienie to : {zamowienieNr} z dnia 
-          </h2>
+        <h2>Twoje zamowienie to : {zamowienieNr} z dnia : </h2>
           <p>{dzienZamowienia.toString()}</p>
         <h3>Lista produktow :</h3>
         {koszyk.map( (item,index) => {
@@ -22,7 +21,9 @@ function Koszyk({koszyk , price}) {
           )
         })}
 
-        <h3>Podsumowanie : {price}</h3>
+        <h3>Podsumowanie : </h3>
+        <h2>ilość produktów: {koszyk.length}</h2>
+        <h2>Wartośc produktów : </h2>
       </div>
     </div>
   )

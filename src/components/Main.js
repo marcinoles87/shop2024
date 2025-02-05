@@ -34,7 +34,7 @@ function Main() {
 
         {mainElements.map( (item , index) => {
           return(
-            <div className='main-element'>
+            <div className='main-element' key={index}>
               <img src={item.img} alt={item.name}></img>
               
               

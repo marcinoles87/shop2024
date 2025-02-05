@@ -19,6 +19,7 @@
   padding: 10px;
   width: 120px;
   text-align: center;
+  text-decoration: none;
 }
 
 
@@ -140,6 +141,11 @@
 
 .product-one img{
   width: 50%;
+}
+
+.productBuy{
+  background-color: rgb(80, 224, 80);
+
 }
 
 .sidebar-item input{
