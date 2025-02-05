@@ -121,6 +121,8 @@
   align-items: center;
 }
 
+
+
 .product-info button{
   border-radius: 5px;
   border: none;
@@ -128,6 +130,12 @@
   color:white;
   margin-bottom: 10px;
   padding: 8px;
+  transition: 0.6s ease;
+}
+
+.product-info button:hover{
+  background-color: rgb(66, 174, 246);
+  
 }
 
 .product-one img{
