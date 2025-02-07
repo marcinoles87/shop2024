@@ -110,8 +110,13 @@
   margin: 10px;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   overflow: hidden;
+  transition: 0.5s ease;
+
+}
+
+.product-one:hover{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
 }
 
@@ -203,6 +208,8 @@
 
 .koszyk-container{
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .koszyk-items{
@@ -210,4 +217,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.koszyk-podsumowanie{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.koszyk-podsumowanie h2{
+  background-color: rgb(56, 182, 159);
+  color:white;
+  border-radius: 10px;
+  padding: 5px;
 }
