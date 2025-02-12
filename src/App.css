@@ -219,6 +219,22 @@
   align-items: center;
 }
 
+.koszyk-produkty{
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.koszyk-podsumowanie label{
+  margin: 5px;
+   width: 50%;
+}
+
+.koszyk-produkty img{
+  padding: 10px;
+}
+
 .koszyk-podsumowanie{
   display: flex;
   flex-direction: column;
