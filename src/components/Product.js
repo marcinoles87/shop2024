@@ -18,25 +18,25 @@ function Product({data , koszyk , setKoszyk}) {
 const products = [
   {
     name : 'name 1',
-    price : '99.99$',
+    price : '99.99',
     img : color
   },
 
   {
     name : 'name 1',
-    price : '99.99$',
+    price : '99.99',
     img : color
   },
 
   {
     name : 'name 1',
-    price : '99.99$',
+    price : '99.99',
     img : color
   },
 
   {
     name : 'name 1',
-    price : '99.99$',
+    price : '99.99',
     img : color
   }
 ]
@@ -69,7 +69,7 @@ const handleClick = ( (item) => {
                     <img src={item.picture.thumbnail} alt={item.email}></img>
                     <div className='product-info'>
                       <h4><b>Product Name</b></h4>
-                      <p>Price : 99.99$</p>
+                      <p>Price : 99.99</p>
                       <p>{item.email}</p>
                       <button onClick={( () => handleClick(item))}>Add to card</button>
                     </div>
