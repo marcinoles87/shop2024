@@ -7,25 +7,21 @@ import img3 from '../img/3.jpg'
 function Main() {
 
   const handleNext = () =>{
-    console.log('yes')
+  
 
     const start = 20
 
     const elements = document.querySelector('.main-elements')
-    console.log(elements)
-    elements.classList.add('changePosition')
     elements.style.transform = "translateX(" + start + "vw)"
 
   }
 
   const handlePrev = () =>{
-    console.log('yes')
+  
 
     const start = -20
 
     const elements = document.querySelector('.main-elements')
-    console.log(elements)
-    elements.classList.add('changePosition')
     elements.style.transform = "translateX(" + start + "vw)"
 
   }
