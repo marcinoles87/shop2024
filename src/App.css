@@ -9,6 +9,19 @@
   box-sizing: border-box;
 }
 
+/* nawigacja arrow */
+
+.arrow-right{
+  display:inline-block;
+  position: absolute;
+  right: 10%;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 10px;
+
+}
+
 .shopItem{
   position: fixed;
   top:20px;

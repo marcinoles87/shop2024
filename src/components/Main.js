@@ -6,6 +6,13 @@ import img3 from '../img/3.jpg'
 
 function Main() {
 
+  const handleClick = () =>{
+    console.log('yes')
+
+    const elements = document.querySelector('main-element')
+    console.log(elements)
+  }
+
   const mainElements = [
     {
       name : '1' ,
@@ -30,6 +37,8 @@ function Main() {
     <div className='main-cotnainer'>
       <div className='main-elements'>
 
+
+
        
 
         {mainElements.map( (item , index) => {
@@ -42,8 +51,11 @@ function Main() {
           )
         })}
 
+<div className='arrow-right' onClick={handleClick}></div>
         {/* elementy pobrane do wyswietlenia z zew.API lub kolarz/zdjecia plus opis w ktory mozna wejsc --> nowa strona z opisem artykuly/produktu */}
       </div>
+
+      
     </div>
   )
 }
