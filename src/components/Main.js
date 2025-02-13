@@ -9,8 +9,13 @@ function Main() {
   const handleClick = () =>{
     console.log('yes')
 
-    const elements = document.querySelector('main-element')
+    const start = 150
+
+    const elements = document.querySelector('.main-elements')
     console.log(elements)
+    elements.classList.add('changePosition')
+    elements.style.transform = "translateX(" + start + "px)"
+
   }
 
   const mainElements = [

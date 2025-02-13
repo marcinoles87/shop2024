@@ -22,6 +22,10 @@
 
 }
 
+.changePosition{
+  transform: translateX(100px);
+}
+
 .shopItem{
   position: fixed;
   top:20px;
