@@ -22,6 +22,17 @@
 
 }
 
+.arrow-left{
+  display:inline-block;
+  position: absolute;
+  left: 10%;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 10px;
+
+}
+
 .changePosition{
   transform: translateX(100px);
 }

@@ -6,15 +6,27 @@ import img3 from '../img/3.jpg'
 
 function Main() {
 
-  const handleClick = () =>{
+  const handleNext = () =>{
     console.log('yes')
 
-    const start = 150
+    const start = 20
 
     const elements = document.querySelector('.main-elements')
     console.log(elements)
     elements.classList.add('changePosition')
-    elements.style.transform = "translateX(" + start + "px)"
+    elements.style.transform = "translateX(" + start + "vw)"
+
+  }
+
+  const handlePrev = () =>{
+    console.log('yes')
+
+    const start = -20
+
+    const elements = document.querySelector('.main-elements')
+    console.log(elements)
+    elements.classList.add('changePosition')
+    elements.style.transform = "translateX(" + start + "vw)"
 
   }
 
@@ -56,7 +68,8 @@ function Main() {
           )
         })}
 
-<div className='arrow-right' onClick={handleClick}></div>
+<div className='arrow-right' onClick={handleNext}></div>
+<div className='arrow-left' onClick={handlePrev}></div>
         {/* elementy pobrane do wyswietlenia z zew.API lub kolarz/zdjecia plus opis w ktory mozna wejsc --> nowa strona z opisem artykuly/produktu */}
       </div>
 
