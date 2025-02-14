@@ -45,6 +45,24 @@ function Main() {
 
     } ,
 
+    {
+      name : '3' ,
+      img : img3
+
+    } ,
+
+    {
+      name : '3' ,
+      img : img3
+
+    } ,
+
+    {
+      name : '3' ,
+      img : img3
+
+    } ,
+
   ]
   return (
     <div className='main-cotnainer'>
