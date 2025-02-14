@@ -85,10 +85,11 @@ function Main() {
           )
         })}
 
-<div className='arrow-right' onClick={handleNext}></div>
-<div className='arrow-left' onClick={handlePrev}></div>
 
       </div>
+
+      <div className='arrow-right' onClick={handleNext}></div>
+<div className='arrow-left' onClick={handlePrev}></div>
 
       
     </div>
