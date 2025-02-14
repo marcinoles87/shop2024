@@ -11,10 +11,8 @@ function Main() {
   const handleNext = () =>{
   
     setStart( 
-      start => start + 50
+      start => start + 150
     )
-
-    
 
     const elements = document.querySelector('.main-elements')
     elements.style.transform = "translateX(" + start + "px)"
@@ -25,7 +23,7 @@ function Main() {
   
 
     setStart( 
-      start => start - 50
+      start => start - 150
     )
 
     const elements = document.querySelector('.main-elements')
@@ -88,8 +86,8 @@ function Main() {
 
       </div>
 
-      <div className='arrow-right' onClick={handleNext}></div>
-<div className='arrow-left' onClick={handlePrev}></div>
+      <button className='arrow-right' onClick={handleNext}>{`>`}</button>
+      <button className='arrow-left' onClick={handlePrev}>{`<`}</button>
 
       
     </div>
