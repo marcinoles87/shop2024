@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import img1 from '../img/1.jpg'
 import img2 from '../img/2.jpg'
@@ -6,23 +6,30 @@ import img3 from '../img/3.jpg'
 
 function Main() {
 
+  const [start , setStart] = useState(0)
+
   const handleNext = () =>{
   
+    setStart( 
+      start => start + 50
+    )
 
-    const start = 20
+    
 
     const elements = document.querySelector('.main-elements')
-    elements.style.transform = "translateX(" + start + "vw)"
+    elements.style.transform = "translateX(" + start + "px)"
 
   }
 
   const handlePrev = () =>{
   
 
-    const start = -20
+    setStart( 
+      start => start - 50
+    )
 
     const elements = document.querySelector('.main-elements')
-    elements.style.transform = "translateX(" + start + "vw)"
+    elements.style.transform = "translateX(" + start + "px)"
 
   }
 
@@ -68,10 +75,6 @@ function Main() {
     <div className='main-cotnainer'>
       <div className='main-elements'>
 
-
-
-       
-
         {mainElements.map( (item , index) => {
           return(
             <div className='main-element' key={index}>
@@ -84,7 +87,7 @@ function Main() {
 
 <div className='arrow-right' onClick={handleNext}></div>
 <div className='arrow-left' onClick={handlePrev}></div>
-        {/* elementy pobrane do wyswietlenia z zew.API lub kolarz/zdjecia plus opis w ktory mozna wejsc --> nowa strona z opisem artykuly/produktu */}
+
       </div>
 
       
