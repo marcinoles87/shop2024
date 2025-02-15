@@ -4,14 +4,19 @@ import '../App.css'
 function Koszyk({koszyk , price}) {
 
   const zamowienieNr = Math.floor(Math.random()*100)
-  const dzienZamowienia = Date()
+  const dzienZamowienia =new Date()
+  const dzien = dzienZamowienia.getDay()
+  const miesiac = dzienZamowienia.getMonth()
+  const godzina = dzienZamowienia.getHours()
+  const minuta = dzienZamowienia.getMinutes()
+  const rok = dzienZamowienia.getUTCFullYear()
 
   return (
     <div className='koszyk-container'>
       <div className='koszyk-items'>
           
-          <h2>Twoje zamowienie nr. {zamowienieNr} </h2>
-          <p>Dzień : {dzienZamowienia.toString()}</p>
+          <h2>Twoje zamowienie nr.{rok}/{zamowienieNr} </h2>
+          <p>Zamówienie z dnia : {dzien}.{miesiac}.{rok} godzina :{godzina}:{minuta}</p>
           <h3>Lista produktow :</h3>
               
               {koszyk.map( (item,index) => {

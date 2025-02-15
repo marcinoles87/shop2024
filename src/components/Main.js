@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import img1 from '../img/1.jpg'
 import img2 from '../img/2.jpg'
 import img3 from '../img/3.jpg'
+import img4 from '../img/adidas1.webp'
 
 function Main() {
 
@@ -64,7 +65,7 @@ function Main() {
 
     {
       name : '3' ,
-      img : img3
+      img : img4
 
     } ,
 
