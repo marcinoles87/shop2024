@@ -6,6 +6,10 @@ function Sidebar() {
     const [name,setName] = useState('');
     const [color,setColor] = useState('')
 
+    const handleFilter = () =>{
+        console.log(price,name,color)
+    }
+
   return (
     <div className='sidebar-container'>
         <div className='sidebar-items'>
