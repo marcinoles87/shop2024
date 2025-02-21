@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../App.css'
 
 function Koszyk({koszyk , price}) {
+
+  const [name,setName] = useState('')
+  const [adres,setAdres] = useState('')
+  const [phone,setPhone] = useState('')
 
   const zamowienieNr = Math.floor(Math.random()*100)
   const dzienZamowienia =new Date()
@@ -36,21 +40,26 @@ function Koszyk({koszyk , price}) {
       <div className='koszyk-podsumowanie'>
           <h2>Twoje dane wysyłkowe :</h2>
           <label>
-           Imie i Nazwisko <input onChange={(e) => e.target.value} ></input>
+           Imie i Nazwisko <input onChange={e => setName(e.target.value)} ></input>
           </label>
 
           <label>
-           Adres wysyłki<input onChange={(e) => e.target.value}></input>
+           Adres wysyłki<input onChange={e => setAdres(e.target.value)}></input>
           </label>
 
           <label>
-           Telefon <input onChange={(e) => e.target.value}></input>
+           Telefon <input onChange={e=> setPhone(e.target.value)}></input>
           </label>
           
           <h3>Podsumowanie : </h3>
+          <p>{name}</p>
+          <p>{adres}</p>
+          <p>{phone}</p>
           <h2>ilość produktów: {koszyk.length}</h2>
           <h2>Wartośc produktów : </h2>
         </div>
+
+
       
     </div>
   )
