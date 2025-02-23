@@ -11,7 +11,7 @@ function Sidebar({data}) {
         console.log(data)
 
         const dane = data
-        const search = dane.name.filter( (name) => name.length > 8)
+        const search = dane.filter( (name) => name.gender === 'male')
         console.log(search)
     }
 
