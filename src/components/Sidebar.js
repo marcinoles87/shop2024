@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Sidebar() {
+function Sidebar({data}) {
 
     const [price,setPrice] = useState('');
     const [name,setName] = useState('');
@@ -8,7 +8,14 @@ function Sidebar() {
 
     const handleFilter = () =>{
         console.log(name,price,color)
+        console.log(data)
+
+        const dane = data
+        const search = dane.name.filter( (name) => name.length > 8)
+        console.log(search)
     }
+
+    
 
   return (
     <div className='sidebar-container'>

@@ -29,6 +29,8 @@ function App() {
       
   } , [] )
 
+  console.log(koszyk)
+
  
 
  
@@ -44,7 +46,7 @@ function App() {
             <Link to={'/koszyk'} className='shopItem'>Koszyk : {koszyk.length}</Link>
             
             <div className='products'>
-              <Sidebar></Sidebar>
+              <Sidebar data={data}></Sidebar>
             <Product data={data} koszyk={koszyk} setKoszyk={setKoszyk}></Product>
             </div>
             
