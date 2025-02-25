@@ -48,6 +48,10 @@ function Koszyk({koszyk , price}) {
           </label>
 
           <label>
+            Miasto : <input type='checkbox'></input>
+          </label>
+
+          <label>
            Telefon <input onChange={e=> setPhone(e.target.value)}></input>
           </label>
           

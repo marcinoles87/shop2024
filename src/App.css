@@ -235,7 +235,7 @@
 .koszyk-container{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .koszyk-items{
