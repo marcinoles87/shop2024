@@ -48,7 +48,16 @@ function Koszyk({koszyk , price}) {
           </label>
 
           <label>
-            Miasto : <input type='checkbox'></input>
+            Miasto 
+            <select>
+              <option value='Krakow'>Krakow</option>
+              <option value='Warszawa'>Warszawa</option>
+              <option value='Gdansk'>Gdańsk</option>
+              <option value='Poznan'>Poznań</option>
+              <option value='Kielce'>Kielce</option>
+              <option value='Gdynia'>Gdynia</option>
+              <option value='Łódz'>Łódż</option>
+            </select>
           </label>
 
           <label>
