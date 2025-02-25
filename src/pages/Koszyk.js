@@ -6,6 +6,7 @@ function Koszyk({koszyk , price}) {
   const [name,setName] = useState('')
   const [adres,setAdres] = useState('')
   const [phone,setPhone] = useState('')
+  const [miasto,setMiasto] = useState('')
 
   const zamowienieNr = Math.floor(Math.random()*100)
   const dzienZamowienia =new Date()
@@ -49,8 +50,8 @@ function Koszyk({koszyk , price}) {
 
           <label>
             Miasto 
-            <select>
-              <option value='Krakow'>Krakow</option>
+            <select value={(e) => e.target.value} onChange={e => setMiasto(e.target.value)}>
+              <option value=''>Prosze wybrać miasto</option>
               <option value='Warszawa'>Warszawa</option>
               <option value='Gdansk'>Gdańsk</option>
               <option value='Poznan'>Poznań</option>
@@ -68,9 +69,14 @@ function Koszyk({koszyk , price}) {
           <p>{name}</p>
           <p>{adres}</p>
           <p>{phone}</p>
+          <p>{miasto}</p>
           <h2>ilość produktów: {koszyk.length}</h2>
           <h2>Wartośc produktów : </h2>
+
+          <button>Złóż zamowienie</button>
         </div>
+
+       
 
 
       
