@@ -6,15 +6,15 @@ function Sidebar({data,setData}) {
     const [name,setName] = useState('');
     const [color,setColor] = useState('')
 
+    console.log(data)
+
     const handleFilter = () =>{
         console.log(name,price,color)
         console.log(data)
         console.log(setData)
 
         const dane = [...data]
-        console.log(dane)
         const search = dane.filter( (item) => item.name.last.includes(name))
-        console.log(search)
 
         setData(search)
     }
