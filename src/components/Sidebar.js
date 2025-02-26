@@ -7,8 +7,12 @@ function Sidebar({data,setData}) {
     const [color,setColor] = useState('')
 
     console.log(data)
+    
 
-    const handleFilter = () =>{
+    const handleFilter = (e) =>{
+
+        e.preventDefault()
+        setName(e.target.value)
         console.log(name,price,color)
         console.log(data)
         console.log(setData)
@@ -26,7 +30,7 @@ function Sidebar({data,setData}) {
         <div className='sidebar-items'>
             <div className='sidebar-item'>
                 <label>Name</label>
-                <input onChange={e => setName(e.target.value)}></input>
+                <input onChange={handleFilter}></input>
             </div>
 
             <div className='sidebar-item'>
