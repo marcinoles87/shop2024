@@ -13,7 +13,7 @@ function Sidebar({data,setData}) {
 
         const dane = [...data]
         console.log(dane)
-        const search = dane.filter( (item) => item.name.includes(name,dane))
+        const search = dane.filter( (item) => item.name.last.includes(name))
         console.log(search)
 
         setData(search)
