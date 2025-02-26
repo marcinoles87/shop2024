@@ -46,7 +46,7 @@ function App() {
             <Link to={'/koszyk'} className='shopItem'>Koszyk : {koszyk.length}</Link>
             
             <div className='products'>
-              <Sidebar data={data}></Sidebar>
+              <Sidebar data={data} setData={setData}></Sidebar>
             <Product data={data} koszyk={koszyk} setKoszyk={setKoszyk}></Product>
             </div>
             

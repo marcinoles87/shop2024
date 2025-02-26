@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Sidebar({data}) {
+function Sidebar({data,setData}) {
 
     const [price,setPrice] = useState('');
     const [name,setName] = useState('');
@@ -9,10 +9,14 @@ function Sidebar({data}) {
     const handleFilter = () =>{
         console.log(name,price,color)
         console.log(data)
+        console.log(setData)
 
-        const dane = data
-        const search = dane.filter( (name) => name.gender === 'male')
+        const dane = [...data]
+        console.log(dane)
+        const search = dane.filter( (item) => item.name.includes(name,dane))
         console.log(search)
+
+        setData(search)
     }
 
     
