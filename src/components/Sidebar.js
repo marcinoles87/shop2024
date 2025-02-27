@@ -13,15 +13,17 @@ function Sidebar({data,setData}) {
 
         const searchData = e.target.value
         e.preventDefault()
-        setName(e.target.value)
+        setName(searchData)
         console.log(name,price,color)
         const dane = [...data]
         const search = dane.filter( (item) => item.name.last.includes(searchData))
 
-        setData(search)
-
         if(search === ''){
             setData(data)
+            console.log(data)
+        }else{
+            setData(search)
+            console.log(data)
         }
     }
 
