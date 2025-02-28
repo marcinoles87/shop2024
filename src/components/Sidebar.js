@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Sidebar({data,setData}) {
+function Sidebar({data,setData,setSearchData}) {
 
     const [price,setPrice] = useState('');
     const [name,setName] = useState('');
@@ -22,8 +22,8 @@ function Sidebar({data,setData}) {
             setData(data)
             console.log(data)
         }else{
-            setData(search)
-            console.log(data)
+            setSearchData(search)
+    
         }
     }
 

@@ -17,6 +17,7 @@ function App() {
   const initial = 0
 
   const [data , setData] = useState([]);
+  const [searchData,setSearchData] = useState([])
   const [koszyk , setKoszyk] = useState([])
   const [price , setPrice] = useState(0)
 
@@ -46,8 +47,8 @@ function App() {
             <Link to={'/koszyk'} className='shopItem'>Koszyk : {koszyk.length}</Link>
             
             <div className='products'>
-              <Sidebar data={data} setData={setData}></Sidebar>
-            <Product data={data} koszyk={koszyk} setKoszyk={setKoszyk}></Product>
+              <Sidebar data={data} setData={setData} setSearchData={setSearchData}></Sidebar>
+            <Product data={data} koszyk={koszyk} setKoszyk={setKoszyk} searchData={searchData}></Product>
             </div>
             
             <Contact></Contact>
