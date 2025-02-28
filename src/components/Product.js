@@ -58,8 +58,10 @@ const handleClick = ( (item) => {
   return (
 
     <div className='product-container'>
+
+      {searchData ?  
      
-      {searchData.map( (item,index) => {
+      searchData.map( (item,index) => {
         return(
           <div className='product-one' key={index}>
                     <img src={item.picture.thumbnail} alt={item.email}></img>
@@ -76,7 +78,9 @@ const handleClick = ( (item) => {
                   </div>
 
         )
-      })}
+      })
+
+      : ''}
       {data.map ( (item,index) => {
                 return(
                   <div className='product-one' key={index}>
