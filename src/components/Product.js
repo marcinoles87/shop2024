@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import adidas from '../img/adidas1.webp'
 
 
 
@@ -16,25 +17,31 @@ const products = [
   {
     name : 'name 1',
     price : '99.99',
-    img : color
+    img : adidas
   },
 
   {
     name : 'name 1',
     price : '99.99',
-    img : color
+    img : adidas
   },
 
   {
     name : 'name 1',
     price : '99.99',
-    img : color
+    img : adidas
   },
 
   {
     name : 'name 1',
     price : '99.99',
-    img : color
+    img : adidas
+  },
+
+  {
+    name : 'name 1',
+    price : '99.99',
+    img : adidas
   }
 ]
 
@@ -59,7 +66,7 @@ const handleClick = ( (item) => {
 
     <div className='product-container'>
 
-      {searchData ?  
+      {/* {searchData ?  
      
       searchData.map( (item,index) => {
         return(
@@ -95,9 +102,9 @@ const handleClick = ( (item) => {
                   
                   </div>
                 )
-              })}
+              })} */}
 
-              {/* {products.map ( (item,index) => {
+              {products.map ( (item,index) => {
 
 
               
@@ -105,7 +112,8 @@ const handleClick = ( (item) => {
                 return(
                   <>
                   <div className='product-one' key={index}>
-                    {item.img}
+                    
+                     <img src={item.img} alt=""></img>
                     <div className='product-info'>
                       <h4><b>Product Name</b></h4>
                       <p>Price : 99.99</p>
@@ -117,7 +125,7 @@ const handleClick = ( (item) => {
                   </div>
                   </>
                 )
-              })} */}
+              })}
 
       
 
