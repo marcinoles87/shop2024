@@ -66,7 +66,7 @@ const handleClick = ( (item) => {
 
     <div className='product-container'>
 
-      {/* {searchData ?  
+      {searchData ?  
      
       searchData.map( (item,index) => {
         return(
@@ -88,7 +88,8 @@ const handleClick = ( (item) => {
       })
 
       : ''}
-      {data.map ( (item,index) => {
+
+      {/* {data.map ( (item,index) => {
                 return(
                   <div className='product-one' key={index}>
                     <img src={item.picture.thumbnail} alt={item.email}></img>
@@ -104,7 +105,7 @@ const handleClick = ( (item) => {
                 )
               })} */}
 
-              {products.map ( (item,index) => {
+              {/* {products.map ( (item,index) => {
 
 
               
@@ -125,7 +126,7 @@ const handleClick = ( (item) => {
                   </div>
                   </>
                 )
-              })}
+              })} */}
 
       
 
